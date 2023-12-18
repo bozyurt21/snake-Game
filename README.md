@@ -2,11 +2,13 @@
 
 ## Description
 This is a basic python project written with turtle library which I had made while I was relearning python from Angela Yu, Udemy. This project tought me a lot about turtle library, how can I use it and also tought me designing a game in basic level.
-
+## If you want to use this repository:
++ Open your terminal
++ 
 ## About the program
 This part is about how I structure program and illustrate what does each function in class do.
 
-### [Scoreborad.py](scoreboard.py)
+### [scoreborad.py](scoreboard.py)
 >This is the class which I kept my scores and also visualized my scores with Turtle
 >To use this class first import the scoreboard class to your main.py 
 ```
@@ -25,7 +27,7 @@ from scoreboard import ScoreBoard
 You can choose the defined variables ALIGN and FONT whatever you want!
 ```
 
->**to increase score:**
+**to increase score:**
 ```
 <name_of_your_scoreboard>.increase()
 ```
@@ -49,8 +51,79 @@ You can choose the defined variables ALIGN and FONT whatever you want!
 ```
 <name_of_your_scoreboard>.end_the_game()
 ```
->**If you use this you couldn't replay the game**, please consider that while you implement this in your main.py
+>**If you use this you couldn't replay the game**, please consider that while you implement this in your main.py.
+>In my main I use 'space' to stop the game (you can consider using it like that)
 
 **This are all the functions you can use with scoreboard class**
+
+### [food.py](food.py)
+> this is a class which locate food in random positions.
+> first you need to implement the file into your system with following:
+```
+from food import Food
+```
+then:
+**to locate food in new places:**
+```
+<name_of_your_food>=Food()
+```
+>Again we assign our varible <name_of_your_food> too class function Food().
+>**What does Food function do?**
+>choose random integer between from -270 to 270 for both x and y coordinates and with using turtle goto() function move the food turtle to this random location.
+
+### [snake.py](snake.py)
+This file consist class where we create our snake and with below functions assign required specialities to our snake.
+
+To be able to use this class do the following:
+```
+from snake import Snake
+```
+Again you need to assign variable to Snake() class as follow:
+```
+<your_snake>=Snake()
+```
+**To move right use:**
+```
+<your_snake>.screen_right()
+```
+>This will move snakes head to the right.
+
+**To move left use:**
+```
+<your_snake>.screen_left()
+```
+>This will move snakes head to the left.
+
+**To move up use:**
+```
+<your_snake>.screen_up()
+```
+>This will move sneakes head to the up direction.
+
+**To move down use:**
+```
+<your_snake>.screen_down()
+```
+>This will move sneakes head to the down direction.
+
+# These functions DO NOT move sneak entirely just move the head, to be able to move in direction you should use the following:
+
+**to move continuesly use:**
+```
+<your_snake>.move()
+```
+
+**to increase the length of snake use:**
+```
+<your_snake>.extend()
+```
+**to reset the snake length use:**
+```
+<your_snake>.reset()
+```
+
+# If you have any question regarding to my code, please mail [bensuozyurt.21@gmail.com](bensuozyurt.21@gmail.com).
+### Hope you enjoyed my code :)
+
 
 
