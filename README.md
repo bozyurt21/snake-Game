@@ -2,9 +2,7 @@
 
 ## Description
 This is a basic python project written with turtle library which I had made while I was relearning python from Angela Yu, Udemy. This project tought me a lot about turtle library, how can I use it and also tought me designing a game in basic level.
-## If you want to use this repository:
-+ Open your terminal
-+ 
+
 ## About the program
 This part is about how I structure program and illustrate what does each function in class do.
 
